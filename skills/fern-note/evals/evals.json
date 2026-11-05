@@ -1,0 +1,23 @@
+{
+  "skill_name": "fern-note",
+  "evals": [
+    {
+      "id": "fern-note-1",
+      "prompt": "Format the input phrase by trimming outer whitespace, converting all letters to uppercase while preserving internal spaces, then adding the exact prefix FERN: and exact suffix :END. Return only the resulting one-line label with no Markdown or explanation. Input phrase: rainy day",
+      "expected_output": "FERN:RAINY DAY:END",
+      "assertions": [
+        "The final answer is exactly FERN:RAINY DAY:END",
+        "No extra explanation or Markdown is returned"
+      ]
+    },
+    {
+      "id": "fern-note-2",
+      "prompt": "Format the input phrase by trimming outer whitespace, converting all letters to uppercase while preserving internal spaces, then adding the exact prefix FERN: and exact suffix :END. Return only the resulting one-line label with no Markdown or explanation. Input phrase: quiet lake",
+      "expected_output": "FERN:QUIET LAKE:END",
+      "assertions": [
+        "The final answer is exactly FERN:QUIET LAKE:END",
+        "No extra explanation or Markdown is returned"
+      ]
+    }
+  ]
+}

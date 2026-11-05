@@ -1,0 +1,21 @@
+{
+  "skill_name": "compass-code",
+  "evals": [
+    {
+      "id": "compass-code-1",
+      "prompt": "Compute the final clockwise compass bearing in degrees: NORTH=0, EAST=90, SOUTH=180, WEST=270. Each RIGHT turn adds 90 degrees, LEFT subtracts 90, and AROUND adds 180; reduce the result modulo 360. Start NORTH, turn RIGHT, then RIGHT. Return exactly BEARING:<integer> with no explanation or Markdown.",
+      "expected_output": "BEARING:180",
+      "assertions": [
+        "Final answer is exactly BEARING:180"
+      ]
+    },
+    {
+      "id": "compass-code-2",
+      "prompt": "Compute the final clockwise compass bearing in degrees: NORTH=0, EAST=90, SOUTH=180, WEST=270. Each RIGHT turn adds 90 degrees, LEFT subtracts 90, and AROUND adds 180; reduce the result modulo 360. Start WEST, turn LEFT, then RIGHT. Return exactly BEARING:<integer> with no explanation or Markdown.",
+      "expected_output": "BEARING:270",
+      "assertions": [
+        "Final answer is exactly BEARING:270"
+      ]
+    }
+  ]
+}
